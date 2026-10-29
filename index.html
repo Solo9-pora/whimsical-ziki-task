@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#f4f6fb" />
+    <title>Settings · Ziki</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="gear-tuning.css?v=teeth-small-3" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="topbar">
+      <a class="brand" href="#home" aria-label="Ziki home"><svg viewBox="0 0 28 28" aria-hidden="true"><path d="M4 6h19L7 22h17"/></svg><span>ziki</span></a>
+      <button class="workspace" type="button" data-no-gear><span>Active workspace,</span><strong>Zedu</strong><span class="chevron">⌄</span></button>
+      <nav class="topnav" aria-label="Workspace"><a href="#product" data-no-gear><span class="nav-icon">◉</span>Product</a><a href="#marketing" data-no-gear><span class="nav-icon">▱</span>Marketing</a><a href="#security" data-no-gear><span class="nav-icon">⬡</span>Security</a></nav>
+      <div class="top-actions"><button type="button" class="agents" data-no-gear>▣ <span>Agents</span>⌄</button><button type="button" class="profile" data-no-gear><span class="avatar">SO</span><span>Solomon Ogah</span>⌄</button><span class="points"><strong>1253</strong> pts</span><button class="bell" type="button" aria-label="Notifications" data-no-gear>♧<i>5</i></button></div>
+    </header>
+    <div class="gear-layer" aria-hidden="true"><div class="gear-pair" id="gearPair"><svg class="gear gear-large" viewBox="0 0 100 100"><path class="gear-shape"/><circle class="gear-hole" cx="50" cy="50" r="15"/></svg><svg class="gear gear-small" viewBox="0 0 100 100"><path class="gear-shape"/><circle class="gear-hole" cx="50" cy="50" r="15"/></svg></div></div>
+    <main id="main" class="settings-shell">
+      <div class="crumb"><span data-no-gear>Zedu</span> <span>›</span> <span data-no-gear>Workspace</span></div>
+      <div class="settings-heading"><div><h1 id="settingsTitle" data-no-gear>Settings</h1><p data-no-gear>Manage your workspace and the people and agents in it.</p></div><button class="save-button" id="saveButton" type="button" data-no-gear>Save changes</button></div>
+      <div class="settings-layout">
+        <nav class="settings-nav" aria-label="Settings sections"><span class="nav-caption" data-no-gear>WORKSPACE</span><a class="selected" href="#general" data-no-gear>General</a><a href="#members" data-no-gear>Members</a><a href="#agents-settings" data-no-gear>Agents</a><a href="#notifications" data-no-gear>Notifications</a><a href="#security-settings" data-no-gear>Security</a></nav>
+        <section class="settings-content" aria-label="General settings">
+          <section class="settings-card"><header class="card-heading"><div><h2 data-no-gear>Workspace details</h2><p data-no-gear>Basic information about your Zedu workspace.</p></div></header><label class="field-row"><span class="field-copy" data-no-gear><strong>Workspace name</strong><small>This name is visible to your team.</small></span><input aria-label="Workspace name" value="Zedu" /></label><label class="field-row"><span class="field-copy" data-no-gear><strong>Workspace URL</strong><small>Your workspace’s address on Ziki.</small></span><span class="url-input"><span>ziki.dev/</span><input aria-label="Workspace URL" value="zedu" /></span></label></section>
+          <section class="settings-card"><header class="card-heading"><div><h2 data-no-gear>Agent permissions</h2><p data-no-gear>Decide what connected agents can do.</p></div></header><div class="setting-row"><span class="field-copy" data-no-gear><strong>Let agents request issue claims</strong><small>Agents can offer to work; you choose whether to approve.</small></span><label class="switch"><input type="checkbox" checked aria-label="Let agents request issue claims"><span></span></label></div><div class="setting-row"><span class="field-copy" data-no-gear><strong>Require approval before publishing</strong><small>Agents must pause before a change goes live.</small></span><label class="switch"><input type="checkbox" checked aria-label="Require approval before publishing"><span></span></label></div></section>
+          <p class="save-note" id="saveNote" role="status" aria-live="polite"></p>
+        </section>
+      </div>
+    </main>
+    <style>#main{z-index:auto}.settings-heading h1,.settings-heading>div p{width:fit-content}</style>
+    <script src="app.js?v=teeth-small-3" defer></script>
+  </body>
+</html>
